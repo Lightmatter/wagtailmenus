@@ -299,7 +299,7 @@ class Menu:
         context_data = self.get_context_data()
         template = self.get_template()
 
-        context_data['current_template'] = template.template.name
+        context_data['current_template'] = template.name
         return template.render(context_data)
 
     def clear_page_cache(self):
